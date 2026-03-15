@@ -131,10 +131,10 @@ class Transformer(nn.Module):
     def __init__(
         self,
         tgt_vocab_size,   # 目标语言词表大小
-        d_model=512,      # 模型维度（论文默认512）
-        num_heads=8,      # 注意力头数（论文默认8）
-        num_layers=6,     # Encoder/Decoder 层数（论文默认6）
-        d_ff=2048,        # FFN 中间层维度（论文默认2048）
+        d_model=1024,      # 模型维度（论文默认512）
+        num_heads=16,      # 注意力头数（论文默认8）
+        num_layers=24,     # Encoder/Decoder 层数（论文默认6）
+        d_ff=4096,        # FFN 中间层维度（论文默认2048）
         dropout=0.1,
         max_len=5000
     ):

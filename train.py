@@ -22,8 +22,8 @@ model = Transformer(
 optimizer = torch.optim.AdamW(model.parameters(),lr=3e-3)
 criterion = torch.nn.CrossEntropyLoss()
 
-block_size = 128
-batch_size = 32
+block_size = 256
+batch_size = 256
 
 for step in range(10000):
 
