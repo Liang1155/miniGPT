@@ -19,7 +19,7 @@ model = Transformer(
     tgt_vocab_size=len(chars)
 ).to(device)
 
-optimizer = torch.optim.AdamW(model.parameters(),lr=3e-4)
+optimizer = torch.optim.AdamW(model.parameters(),lr=3e-3)
 criterion = torch.nn.CrossEntropyLoss()
 
 block_size = 128
